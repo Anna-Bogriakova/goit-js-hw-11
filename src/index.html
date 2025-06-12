@@ -8,31 +8,27 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <div class="logo">
+      <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    </div>
 
-    <main>
+    <form class="form">
+      <label>
+        <input
+          type="text"
+          name="search-text"
+          placeholder="Search images..."
+          required
+        />
+      </label>
+      <button type="submit">Search</button>
+    </form>
 
-        <body>
-          <form class="form">
-            <label>
-              <input
-                type="text"
-                name="search-text"
-                placeholder="Search images..."
-                required
-              />
-            </label>
-            <button type="submit">Search</button>
-          </form>
+    <span class="loader is-hidden"></span>
 
-          <span class="loader is-hidden"></span>
+    <ul class="gallery"></ul>
 
-          <ul class="gallery"></ul>
-
-          <script type="module" src="./main.js"></script>
-        </body>
-      </html>
-    </main>
+    <div class="loader is-hidden"></div>
 
     <script type="module" src="./main.js"></script>
   </body>
